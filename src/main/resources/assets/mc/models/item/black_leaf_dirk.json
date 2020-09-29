@@ -1,0 +1,6 @@
+{
+   "parent": "item/handheld",
+   "textures": {
+       "layer0": "mc:items/black_leaf_dirk"
+   }
+}

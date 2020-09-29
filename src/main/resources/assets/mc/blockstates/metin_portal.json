@@ -1,0 +1,6 @@
+  {
+    "variants": {
+        "axis=z": { "model": "mc:metin_portal_ew" },
+        "axis=x": { "model": "mc:metin_portal_ns" }
+    }
+}

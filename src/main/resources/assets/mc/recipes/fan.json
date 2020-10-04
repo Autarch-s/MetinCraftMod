@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "   ",
+        " B ",
+        "BHB"
+    ],
+    
+    "key":
+    {
+        "B":
+        {
+            "item": "minecraft:iron_ingot"
+        },
+        
+        "H":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+    
+    "result":
+    {
+        "item": "mc:fan",
+        "count": 1
+    }
+}

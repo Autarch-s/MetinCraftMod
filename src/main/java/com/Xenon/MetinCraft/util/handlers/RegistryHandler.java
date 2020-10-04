@@ -1,6 +1,8 @@
 package com.Xenon.MetinCraft.util.handlers;
 
 import com.Xenon.MetinCraft.init.MetinBlocks;
+import com.Xenon.MetinCraft.init.MetinDimensions;
+import com.Xenon.MetinCraft.init.MetinEntities;
 import com.Xenon.MetinCraft.init.MetinItems;
 import com.Xenon.MetinCraft.util.IHasModel;
 import com.Xenon.MetinCraft.world.gen.WorldGenCustomStructures;
@@ -49,6 +51,19 @@ public class RegistryHandler
 	}
 	
 	public static void preInitRegistries()
+	{
+		MetinDimensions.register();
+		GameRegistry.registerWorldGenerator(new WorldGenCustomStructures(), 2);
+		MetinEntities.registerEntities();
+		RenderHandler.registerEntityRenders();
+	}
+	
+	public static void initRegistries()
+	{
+		
+	}
+	
+	public static void postInitRegistries()
 	{
 		
 	}

@@ -1,6 +1,18 @@
 {
-   "parent": "item/handheld",
-   "textures": {
-       "layer0": "mc:items/black_leaf_dirk"
-   }
-}
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "mc:items/black_leaf_dirk"
+    },
+        "display": {
+        "thirdperson_righthand": {
+            "rotation": [ 140, -90, 0 ],
+            "translation": [ 0, -5.65, 3.2 ],
+            "scale": [ 1.0, 1.25, 1.0 ]
+        },
+        "thirdperson_lefthand": {
+            "rotation": [ 140, 90, 0 ],
+            "translation": [ 0, -5.65, 3.2 ],
+            "scale": [ 1.0, 1.25, 1.0 ]
+        }
+    }
+}  

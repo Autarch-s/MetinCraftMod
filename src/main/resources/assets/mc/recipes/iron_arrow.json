@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        " P ",
+        " S ",
+        " F "
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "minecraft:feather"
+        },
+        
+        "S":
+        {
+            "item": "minecraft:stick"
+        },
+        
+        "P":
+        {
+            "item": "minecraft:iron_nugget"
+        }
+    },
+    
+    "result":
+    {
+        "item": "mc:iron_arrow",
+        "count": 4
+    }
+}

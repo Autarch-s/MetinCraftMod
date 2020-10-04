@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "SH ",
+        "S L",
+        "SH "
+    ],
+    
+    "key":
+    {
+        "S":
+        {
+            "item": "minecraft:string"
+        },
+        
+        "H":
+        {
+            "item": "minecraft:stick"
+        },
+        
+        "L":
+        {
+            "item": "minecraft:leather"
+        }
+    },
+    
+    "result":
+    {
+        "item": "mc:lv1_bow",
+        "count": 1
+    }
+}

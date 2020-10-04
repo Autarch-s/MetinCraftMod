@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "   ",
+        "B B",
+        "H H"
+    ],
+    
+    "key":
+    {
+        "B":
+        {
+            "item": "minecraft:iron_ingot"
+        },
+        
+        "H":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+    
+    "result":
+    {
+        "item": "mc:dagger",
+        "count": 1
+    }
+}

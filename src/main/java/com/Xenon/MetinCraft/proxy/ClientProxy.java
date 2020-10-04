@@ -1,5 +1,8 @@
 package com.Xenon.MetinCraft.proxy;
 
+import com.Xenon.MetinCraft.entities.bestialArcher.EntityBestialArcher;
+import com.Xenon.MetinCraft.entities.bestialArcher.ModelBestialArcher;
+
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.model.ModelLoader;

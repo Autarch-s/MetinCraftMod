@@ -1,0 +1,6 @@
+{
+   "parent": "item/bow",
+   "textures": {
+       "layer0": "mc:items/horn_bow_0"
+   }
+}

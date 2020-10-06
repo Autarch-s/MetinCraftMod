@@ -232,9 +232,12 @@ public class BlockMetinPortal extends BlockBreakable
             {
             	player.timeUntilPortal = 10;
             	player.mcServer.getPlayerList().transferPlayerToDimension(player, MetinDimensions.SPIDERSDUNGEON.getId(), new MetinTeleporter(player.mcServer.getWorld(MetinDimensions.SPIDERSDUNGEON.getId())));
-            	
-            	
-            	player.setPositionAndUpdate(0, 64, 0);
+            	if(player.dimension == MetinDimensions.SPIDERSDUNGEON.getId())
+            	{
+            		player.setSpawnChunk(new BlockPos(0, 64 , 0), true, 420);
+            		player.setSpawnPoint(new BlockPos(0, 64 , 0), true);
+            		player.setPositionAndUpdate(0, 64, 0);
+            	}
             } 
             else
             {

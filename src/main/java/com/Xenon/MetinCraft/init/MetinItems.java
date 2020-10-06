@@ -7,6 +7,7 @@ import java.util.Set;
 
 import com.Xenon.MetinCraft.items.ItemBase;
 import com.Xenon.MetinCraft.items.ItemPassageTicket;
+import com.Xenon.MetinCraft.items.armour.ArmourBase;
 import com.Xenon.MetinCraft.items.tools.IronArrow;
 import com.Xenon.MetinCraft.items.tools.lv1.Dagger;
 import com.Xenon.MetinCraft.items.tools.lv1.Fan;
@@ -19,13 +20,18 @@ import com.Xenon.MetinCraft.items.tools.lv30.BlackLeafDirk;
 import com.Xenon.MetinCraft.items.tools.lv30.FullMoonSword;
 import com.Xenon.MetinCraft.items.tools.lv30.HornBow;
 import com.Xenon.MetinCraft.items.tools.lv30.RedIronBlade;
+import com.Xenon.MetinCraft.util.Reference;
 import com.google.common.collect.Sets;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
+import net.minecraft.init.SoundEvents;
+import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraft.item.ItemArrow;
 import net.minecraft.item.ItemBow;
 import net.minecraft.item.ItemSword;
@@ -38,8 +44,8 @@ public class MetinItems
 	//Metarials
 	public static final ToolMaterial MATERIAL_LV1 = EnumHelper.addToolMaterial("material_lv1", 2, 500, 6.0F, 2.2F, 14);
 	public static final ToolMaterial MATERIAL_LV30 = EnumHelper.addToolMaterial("material_lv30", 3, 2000, 8.0F, 3.5F, 10);
-	//public static final ArmorMaterial ARMOR_MATERIAL_LV1 = EnumHelper.addArmorMaterial("armor_material_lv1", Reference.MOd_ID + ":iron", 12, 
-	//		new int[] {1,4,6,2}, 10, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0.0F);
+	public static final ArmorMaterial ARMOR_MATERIAL_LV1 = EnumHelper.addArmorMaterial("armor_material_lv1", Reference.MOD_ID + ":lv1warrior", 12, 
+			new int[] {1,4,6,2}, 10, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0.0F);
 	
 	//Items
 	public static final Item FULL_MOON_INGOT = new ItemBase("full_moon_ingot");
@@ -60,4 +66,10 @@ public class MetinItems
 	public static final ItemArrow IRON_ARROW = new IronArrow("iron_arrow");
 	public static final ItemBow Lv1BOW = new Lv1Bow("lv1_bow");
 	public static final ItemBow HORN_BOW = new HornBow("horn_bow");
+	
+	//Armours
+	public static final ItemArmor TRADITIONAL_HELMET = new ArmourBase("traditional_helmet", ARMOR_MATERIAL_LV1, 1, EntityEquipmentSlot.HEAD);
+	public static final ItemArmor MONK_PLATE_ARMOUR_CHEST = new ArmourBase("monk_plate_armour_chestplate", ARMOR_MATERIAL_LV1, 1, EntityEquipmentSlot.CHEST);
+	public static final ItemArmor MONK_PLATE_ARMOUR_LEGS = new ArmourBase("monk_plate_armour_leggings", ARMOR_MATERIAL_LV1, 2, EntityEquipmentSlot.LEGS);
+	public static final ItemArmor LEATHER_SHOES = new ArmourBase("leather_shoes", ARMOR_MATERIAL_LV1, 1, EntityEquipmentSlot.FEET);
 }

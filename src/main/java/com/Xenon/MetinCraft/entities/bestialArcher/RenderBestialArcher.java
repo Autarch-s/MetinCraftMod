@@ -21,7 +21,7 @@ import net.minecraftforge.fml.client.registry.IRenderFactory;
 
 public class RenderBestialArcher extends RenderBiped<AbstractSkeleton>
 {
-	private static final ResourceLocation BESTIAL_ARCHER_TEXTURE = new ResourceLocation(Reference.MOD_ID + ":textures/entities/bestialArcher/bestial_archer.png");
+	private static final ResourceLocation BESTIAL_ARCHER_TEXTURE = new ResourceLocation(Reference.MOD_ID + ":textures/entities/bestialarcher/bestialarcher.png");
 	
 	public RenderBestialArcher(RenderManager renderManagerIn) 
 	{

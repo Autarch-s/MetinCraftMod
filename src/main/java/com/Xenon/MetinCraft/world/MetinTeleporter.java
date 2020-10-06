@@ -59,11 +59,6 @@ public class MetinTeleporter extends Teleporter
                 
                 this.makePortal(entityIn);
                 this.placeInExistingPortal(entityIn, rotationYaw);
-                if(this.world.provider.getDimensionType().getId() == 420)
-                {
-                	EntityPlayerMP player = (EntityPlayerMP)entityIn;
-                	player.setPositionAndUpdate(0, 64, 0);
-                }
             }
         }
         else
